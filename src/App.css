@@ -1,24 +1,96 @@
+
 body {
-  background-color: beige;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  background-color: beige;
 }
 
 .app-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-.menu-section,
-.order-section,
-.payment-section {
-  border: 1px solid #ccc;
-  margin: 20px;
-  padding: 20px;
+h1 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 20px;
+}
+
+
+.menu-section, .order-section, .payment-section {
   background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
 }
 
-h2 {
-  margin-bottom: 10px;
+.menu-section h2, .order-section h2, .payment-section h2 {
+  color: #4a4a8f;
+  margin-bottom: 15px;
 }
+
+.menu-item, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.menu-item span, .order-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a8f;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #6a6acf;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #3b3b6a;
+}
+
+
+.total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+
+.payment-section {
+  margin-top: 20px;
+  color: #28a745;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.p{
+  color:#28a745
+}
+
