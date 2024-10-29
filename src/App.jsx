@@ -19,7 +19,7 @@ function App() {
   }, []);
 
 
-  const addToOrder = (item) => {
+  const addToOrder = (item) => {1
     setOrder([...order, item]); 
     setTotal(total + item.price); 
   };
