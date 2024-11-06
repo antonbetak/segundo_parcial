@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './components/menu.jsx';
 import Order from './components/order.jsx';
 import Payment from './components/payment.jsx';
+import { fetchConfig } from 'firebase/remote-config';
 
 function App() {
   const [menuItems, setMenuItems] = useState([]); 
